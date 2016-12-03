@@ -1,0 +1,52 @@
+<html>
+
+<head> 
+<title>Simon</title>
+
+<link rel="stylesheet" type="text/css" href="simon-game.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="simon-game.js"></script>
+
+</head>
+
+<audio id='buzzer' src='http://soundbible.com/grab.php?id=1495&type=mp3' type='audio/mpeg'></audio>
+<audio id='sound0' src='https://s3.amazonaws.com/freecodecamp/simonSound4.mp3' type='audio/mpeg'></audio>
+<audio id='sound1' src='https://s3.amazonaws.com/freecodecamp/simonSound1.mp3' type='audio/mpeg'></audio>
+<audio id='sound2' src='https://s3.amazonaws.com/freecodecamp/simonSound2.mp3' type='audio/mpeg'></audio>
+<audio id='sound3' src='https://s3.amazonaws.com/freecodecamp/simonSound3.mp3' type='audio/mpeg'></audio>
+
+<body>
+<div id='header'>
+  <div>
+    <h1>Simon game</h1>
+    <p>Repeat after me: Press the correct sequence</p>
+  </div>
+
+</div>
+  <br>
+
+
+
+  <div id='game'>
+    <div id='section-div-lights'>
+      <div class='light opaque' id='light0'></div>
+      <div class='light opaque' id='light1'></div>
+      <div class='light opaque' id='light2'></div>
+      <div class='light opaque' id='light3'></div>
+    </div>
+    <br>
+    <div id='section-div-buttons'>
+      <label><button type="button"  class='opaque' id='start'>Start</button></label>
+      <button type="button"  class='opaque' id='strict'>Strict</button>
+      <button type="button"  class='opaque' id='power'>Power</button>
+      <div id='counter'><h2></h2></div>
+      <button type="button" class='opaque' id='reset'>Reset</button>
+    </div>
+  </div>
+  <br>
+  <div class='helptext' id='computerTurn'>Watch the sequence...</div>
+  <div class='helptext' id='playerTurn'>Press the correct sequence...</div>
+  <div class='helptext' id='tryAgain'>Try again...</div>
+</body>
+
+</html>
