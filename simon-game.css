@@ -1,11 +1,16 @@
+body {
+  margin: 0;
+}
+
 #header {
   width: 100%;
   height: 100px;
   background-color: black;
   font-family: "Arial", Georgia, Serif;
   color: white;
-  margin: auto;
-  padding: 5px 0px 10px 10px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 5px 20px 20px;
 }
 
 #game {
@@ -13,6 +18,7 @@
   width: 450px;
   height: 200px;
   margin: auto;
+  margin-bottom: 20px;
   padding: 20px;
   border: 4px solid black;
   border-radius: 10px;
@@ -21,6 +27,7 @@
 #section-div-lights {
   width: 450px;
   height: 120px;
+  margin-bottom: 20px;
 }
 
 #section-div-buttons {
